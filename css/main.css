@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* s.more */
+.bag-more {
+  position: relative;
+  background: url(https://media.gucci.com/dynamic/b3c8/KXH7xhIp4Tuof1SQys_0VSOcIEN4DWzgDBZODlFx3yi+yHRGgY2d+KKjuQFnt5l0rEUALcl25rbpGkdHfP0U6+F22ZGYEdqz+4p8qyLLuEvswdzYquMrbW3IH0ahcRWVp1dy2WQb4VrAqCfwozeZneOjcx3r88eYYxNuQ9Rx4IvFodRVgIchflWykuMB7_kKyeSKSuCgezqSigBOCXoAt+FijvbucLA0Rakr98nLHu5xgGEupdjfjIhVbDbkKg+Vq3fCCeJyWNmunej53jRrLp6jWWL8RZ4ZDJqW8T19g+gSFPF8pKm1EeARRC84yLOI+1Xw8+Y5eexaFU0mqNF6ivv2uoBi14pzI6pB9E8PJ7BW6+zv7ApqRTkn7ttFJ399/HP_CinamaticLandscape_Gucci-VDAY-Jan25-Valentines-Tbarney-01-034_001_Default.png);
+  height: 46.7rem;
+}
+
+.bag-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 딤처리 */
+  opacity: 0.5; /* 투명도 조절 */
+  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
+}
+
+.bag-con {
+  position: absolute;
+  bottom: 20%;
+  z-index: 10;
+}
+
+.bag-title h4 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--Light-100);
+
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+}
+
+/* e.more */
+
+/* usage-guide */
+.usage-guide {
+  margin: 0;
+  background: var(--main-color);
+  text-align: center;
+}
+
+.usage-guide h3 {
+  padding-top: 12.5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--Light-100);
+
+  padding-top: 8.2237%;
+  font-size: clamp(2.5rem, 0.02083vw, 4rem);
+}
+
+.guide-cards {
+  padding: 7.8rem 0 15.8rem;
+  display: flex;
+  justify-content: space-between;
+
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 2rem;
+
+  padding: 5.1316% 0 10.3947%;
+}
+
+.guide-cards li a {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+
+  width: 48rem;
+  height: 30.7rem;
+  border-radius: 3rem;
+  padding: 3.6rem 4.5rem;
+
+  background: var(--Darck-100);
+  color: var(--Light-100);
+}
+
+.guide-cards li a::after {
+  content: "";
+  width: 8.5rem;
+  height: 8.5rem;
+  margin-top: 15rem;
+
+  margin-top: 38.5263%;
+  width: 17.7083%;
+}
+
+.guide-cards dl dt {
+  font-size: 4rem;
+  font-weight: 800;
+
+  font-size: clamp(2rem, 2.0833vw, 4rem);
+}
+
+.guide-cards dl dd {
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  padding-top: 1.5rem;
+
+  padding-top: 7.0833%;
+  font-size: clamp(1.4rem, 1.25vw, 2.4rem);
+}
+
+.guide-cards li a:hover {
+  color: var(--main-color);
+}
+/* usage-guide end */
+
+/* 반응형 00000000000000000000000000000000000000000000000000000000000000000000000*/
+@media (max-width: 1024px) {
+  .guide-cards li a {
+    width: 29.1rem;
+    height: 18.6rem;
+
+    padding: 2.2rem 2.1rem;
+    border-radius: 1.5rem;
+  }
+
+  .guide-cards li a::after {
+    margin-top: 7rem;
+  }
+
+  .guide-cards dl dd {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .usage-guide h3 {
+    padding-top: 5.8rem;
+  }
+
+  .guide-cards {
+    padding: 4rem 0 8rem;
+  }
+}
