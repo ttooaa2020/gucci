@@ -8,7 +8,7 @@
   --btn: #b4b4b4;
 
   --main-color: #4b000a;
-  --main-color2: #ffc400;
+  --main-color2: #ffa600;
 }
 
 ::selection {
@@ -202,36 +202,6 @@ header nav {
 
 /* 모바일 메뉴 end */
 
-/* visual */
-.main-visual {
-  position: relative;
-  height: 108rem;
-  overflow: hidden;
-}
-
-.main-visual::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* 어두운 딤처리 */
-  opacity: 0.5; /* 투명도 조절 */
-  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
-}
-
-.main-visual figure {
-  height: 100%;
-}
-
-.main-visual figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* visual end */
-
 /* s. footer */
 #footer {
   background: var(--Darck-100);
@@ -243,7 +213,7 @@ header nav {
   display: flex;
   margin-left: -2rem;
   /* background: #5f5; */
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .foot-nav li {
