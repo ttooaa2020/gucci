@@ -49,7 +49,7 @@
   color: var(--Light-100);
 
   padding-top: 8.2237%;
-  font-size: clamp(2.5rem, 0.02083vw, 4rem);
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
 }
 
 .guide-cards {
@@ -92,21 +92,21 @@
   font-size: 4rem;
   font-weight: 800;
 
-  font-size: clamp(2rem, 2.0833vw, 4rem);
+  font-size: clamp(2rem, 1.5625vw, 3rem);
 }
 
 .guide-cards dl dd {
   font-size: 2.4rem;
   font-weight: 500;
 
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-top: 6.25%;
 
-  padding-top: 7.0833%;
-  font-size: clamp(1.4rem, 1.25vw, 2.4rem);
+  font-size: clamp(1.4rem, 1.14583vw, 2.2rem);
 }
 
 .guide-cards li a:hover {
-  color: var(--main-color);
+  color: var(--main-color2);
 }
 /* usage-guide end */
 

@@ -136,9 +136,9 @@
 }
 
 .event-text {
-  padding-top: 2.8rem;
+  padding-top: 2%;
 
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1.042vw, 2rem);
   font-weight: 800;
   color: var(--main-color3);
 
@@ -174,7 +174,7 @@
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   width: 25.7rem;
   padding: 2.5rem 5rem;
@@ -183,17 +183,9 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--Light-100);
-  background: var(--Darck-30);
+  background: var(--btn);
 
   font-size: clamp(1.6rem, 1.302vw, 2.5rem);
-}
-
-.c-more-btn::after {
-  content: "";
-  display: block;
-  width: 2.8rem;
-  height: 2.8rem;
-  background: url(../img/more-arrow.svg) no-repeat 50%;
 }
 
 .c-more-btn:hover {
@@ -203,7 +195,22 @@
 /* e.more */
 /* 서브 공통  */
 
-/* 모바일 000000000000000000000000000000000000000000000000000000000000*/
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media (max-width: 1900px) {
+  .event-list li figure {
+    width: 30rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1900px) {
+  .event-list li figure {
+    width: 25rem;
+    height: 20rem;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   /* company */
   .content {
@@ -233,7 +240,13 @@
   /* company */
 }
 
-/* 모바일 버전  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+@media (max-width: 1360px) {
+  .event-list > li {
+    flex: 1 1 50%;
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 950px) {
   /* company */
   .company .brand-story,
@@ -283,4 +296,22 @@
     height: 1.7rem;
   }
   /* company */
+}
+
+@media (max-width: 620px) {
+  .event-list {
+    padding-top: 4rem;
+  }
+
+  .event-list > li {
+    flex: 1 1 100%;
+  }
+
+  .bag-con {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    left: 20%;
+  }
 }
