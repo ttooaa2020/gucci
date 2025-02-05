@@ -327,7 +327,6 @@
 /* 서브 공통  */
 
 /* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
-
 @media (max-width: 1900px) {
   .event-list li figure {
     width: 30rem;
@@ -335,7 +334,7 @@
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1555px) {
   .event-list li figure {
     width: 25rem;
     height: 20rem;

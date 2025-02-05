@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
 
   min-width: 36rem;
-  background: var(--Light-100);
+  background: #f6f1eb;
 }
 
 a {
