@@ -93,12 +93,7 @@
   font-weight: 700;
   font-size: 3.2rem;
   font-size: clamp(1.4rem, 2.2535vw, 3.2rem);
-
-  color: var(--bg);
-}
-
-.company-text {
-  padding-top: 2rem;
+  color: var(--Darck-60);
 }
 
 .company-text strong {
